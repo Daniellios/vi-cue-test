@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .active-page {
+    @apply bg-yellow-400 px-4 py-2 hover:cursor-pointer;
+  }
+
+  .incative-page {
+    @apply bg-gray-300 px-4 py-2 hover:cursor-pointer hover:bg-yellow-400;
+  }
+}
