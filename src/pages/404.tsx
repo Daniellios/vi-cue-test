@@ -5,11 +5,11 @@ import { useRouter } from "next/router"
 const NotFound = () => {
   const router = useRouter()
 
-  useEffect(() => {
-    setTimeout(() => {
-      router.push("/")
-    }, 3000)
-  }, [])
+  // useEffect(() => {
+  setTimeout(() => {
+    router.push("/")
+  }, 3000)
+  // }, [])
 
   return (
     <div className="container mx-auto flex flex-col items-center justify-start h-screen p-4 pb-10">
@@ -17,7 +17,7 @@ const NotFound = () => {
         Ooops...
       </h1>
       <h2 className="text-lg md:text-[2rem] leading-normal font-extrabold text-gray-500">
-        That page cannot be found :P"
+        That page cannot be found :P
       </h2>
       <p>
         Going back to the

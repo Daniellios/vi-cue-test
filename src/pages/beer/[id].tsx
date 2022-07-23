@@ -36,6 +36,7 @@ const BeerDetails = ({ beer }: any) => {
       </h1>
       <div className="w-full flex flex-col justify-center items-center gap-4">
         <Image
+          alt={beer.name}
           width="200px"
           height="300px"
           layout="fixed"
